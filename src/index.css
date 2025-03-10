@@ -1,5 +1,5 @@
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@ h2,
 h3,
 input,
 button {
-  font-family: 'Press Start 2P', system-ui;
+  font-family: "Press Start 2P", system-ui;
 }
 
 #root {
@@ -23,12 +23,12 @@ button {
   gap: 14px;
 }
 
-header {
+header form {
   display: flex;
   align-items: stretch;
 }
 
-header,
+header form,
 .main {
   max-width: 800px;
   width: 100%;
@@ -36,26 +36,26 @@ header,
   gap: 14px;
 }
 
-header input {
+header form input {
   flex: 1;
   border-radius: 14px;
   outline: none;
   width: 100%;
 }
 
-header button {
+header form button {
   border-radius: 14px;
   background: transparent;
   transition-duration: 200ms;
   cursor: pointer;
 }
 
-header button:hover {
+header form button:hover {
   opacity: 0.7;
 }
 
-header button,
-header input {
+header form button,
+header form input {
   padding: 14px 18px;
   border: none;
   outline: none;
@@ -102,12 +102,9 @@ p {
   opacity: 0.7;
 }
 
-
-
 @media (min-width: 640px) {
-
-  header button,
-  header input {
+  header form button,
+  header form input {
     font-size: 1.2em;
   }
 
